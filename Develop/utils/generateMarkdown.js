@@ -23,43 +23,43 @@ return data.map((item) => {
 }).join(" ");
 };
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(answers) {
   return `
   
-  # ${'projectTitle'}
+  # ${answers.projectTitle}
 
   ## Description:
    
-  ${'description'}
+  ${answers.description}
 
   ## Installation Information:
 
-  ${'installation'}
+  ${answers.installation}
 
   ## Table of Contents:
-  ${tableOfContentsGeneration('tableOfContents')}
+  ${tableOfContentsGeneration(answers.tableOfContents)}
 
   ## Usage;
 
-  ${'usage'}
+  ${answers.usage}
 
   ## Licenses
 
-  ${'licenses'}
+  ${answers.licenses}
 
   ## Badge:
 
   ## Contributing:
 
-  ${'contributing'}
+  ${answers.contributing}
  
   ## Tests:
 
-  ${'tests'}
+  ${answers.tests}
 
   ## Contact Info:
 
-  ${'contactInfo' + 'github'}
+  ${answers.contactInfo + " " + answers.github}
 
 `;
 }

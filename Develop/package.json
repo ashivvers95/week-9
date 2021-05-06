@@ -1,14 +1,23 @@
 {
-  "name": "static-site",
+  "name": "week-9",
   "version": "1.0.0",
-  "description": "",
+  "description": "[How to create a Professional README](./readme-guide.md)",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashivvers95/week-9.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashivvers95/week-9/issues"
+  },
+  "homepage": "https://github.com/ashivvers95/week-9#readme",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^8.0.0"
   }
 }

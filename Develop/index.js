@@ -132,9 +132,8 @@ function init() {
   return inquirer
   .prompt(questions)
   .then(answers => {
-    fs.writeFile('output/README.md', JSON.stringify(answers), err => {
+    fs.writeFile('output/README.md', generateMarkdown({...answers}), err => {
       if (err) throw err;
-      // return generateMarkdown();
   });
   }
   )
